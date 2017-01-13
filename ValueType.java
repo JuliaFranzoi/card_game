@@ -1,5 +1,5 @@
 // public enum ValueType{
-//   ONE,
+//   ACE,
 //   TWO,
 //   THREE,
 //   FOUR,
@@ -9,5 +9,4 @@
 //   EIGHT,
 //   NINE,
 //   TEN,
-//      ;
 // }

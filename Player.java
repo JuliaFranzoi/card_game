@@ -5,14 +5,20 @@ import java.util.*;
 public class Player{
   private String name;
   private ArrayList<Card> hand;
+  private Dealer dealer;
   
-  public Player(String name){
+  public Player(String name, Dealer dealer){
     this.name = name;
     this.hand = new ArrayList<Card>();
+    this.dealer = dealer;
   }
   
   public String getName(){
     return this.name;
+  }
+
+  public void takeCardFromDealer() {
+    addCard(dealer.deal());
   }
 
   public void addCard(Card card){
@@ -23,6 +29,9 @@ public class Player{
     return hand.size();
   } 
   
+  public ArrayList<Card> getCard(){
+    return hand;
+  }
 
 
 }

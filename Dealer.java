@@ -8,12 +8,15 @@ public class Dealer{
     this.deck = deck;
   }
   
-  public Card pickCard(){
-    Card cardPicked = deck.pickCard();
-    return cardPicked;
-  }
   
 
+  public Card deal(){
+    Card cardPicked = deck.pickCard();
+    return cardPicked;
+    // return cardPicked;
+  }
+  
+  
 
 }
 

@@ -1,5 +1,6 @@
 import java.util.*;
 
+
 public class Deck{
   
   private ArrayList<Card> cards;
@@ -8,22 +9,6 @@ public class Deck{
    this.cards = new ArrayList<Card>();
   }
 
-  public void setupDeck(){
-
-
-
-
-  //   for ( SuitType suit : SuitType.values()){
-  //     for (ValueType value : ValueType.values()) 
-  //       System.out.println(SuitType suit, ValueType value);
-  //       // card = Card new(SuitType suit, ValueType .value)};
-  //       // cards.add(card);}
-  //     }
-      
-  //         // create a new card object
-  //         // call addCard(card) method
-    
-  // }
 
 
   public void addCard(Card card){
@@ -49,10 +34,20 @@ public class Deck{
     return null;  
   }
 
+
   public int cardsLeft(){
     return cardCount();
   }
+
   public void clearDeck(){
    cards.clear();
    }
+
+
+public void setupDeck(){
+  for ( SuitType suit : SuitType.values()){
+    for (ValueType value : ValueType.values()){ addCard(new Card( suit, value));
+    }
+  }
+}
 }

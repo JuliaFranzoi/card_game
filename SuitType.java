@@ -1,7 +1,7 @@
 
-// public enum SuitType{
-//   CLUB, 
-//   DIAMOND,
-//   HEART,
-//   SPADE;
-// }
+public enum SuitType{
+  CLUB, 
+  DIAMOND,
+  HEART,
+  SPADE
+}

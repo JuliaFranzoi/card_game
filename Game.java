@@ -1,10 +1,13 @@
 public class Game{
   private int turnCount;
   private Player player;
+  private Dealer dealer;
   
-  public Game(Deck cards Player player){
+  public Game(Deck cards Player player Dealer dealer){
+    this.player = player
     this.cards = cards;
     this.turnCount = 0;
+    this dealer = dealer;
   }
 
 
@@ -19,6 +22,11 @@ public class Game{
   }
 
   public int getTurncount(){
-    return this turnCount;
+    return this.turnCount;
   }
+
+  public int score(){
+    return player.score;
+  }
+  
 }
